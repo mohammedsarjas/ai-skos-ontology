@@ -1,0 +1,81 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <https://vaisakhanvb.github.io/AI-SKOS/ontology#> .
+
+# Concept Scheme
+ex:AI-Scheme a skos:ConceptScheme ;
+    skos:prefLabel "Artificial Intelligence Concept Scheme"@en ;
+    skos:definition "A SKOS concept scheme for key Artificial Intelligence concepts."@en .
+
+# Top concept: Artificial Intelligence
+ex:ArtificialIntelligence a skos:Concept ;
+    skos:prefLabel "Artificial Intelligence"@en ;
+    skos:definition "The field of computer science focused on creating intelligent agents and systems."@en ;
+    skos:inScheme ex:AI-Scheme ;
+    skos:topConceptOf ex:AI-Scheme .
+
+# Machine Learning
+ex:MachineLearning a skos:Concept ;
+    skos:prefLabel "Machine Learning"@en ;
+    skos:altLabel "ML"@en ;
+    skos:definition "A subset of AI focused on building algorithms that learn from data."@en ;
+    skos:broader ex:ArtificialIntelligence ;
+    skos:inScheme ex:AI-Scheme .
+
+# Deep Learning
+ex:DeepLearning a skos:Concept ;
+    skos:prefLabel "Deep Learning"@en ;
+    skos:definition "A subfield of machine learning based on neural networks with many layers."@en ;
+    skos:broader ex:MachineLearning ;
+    skos:inScheme ex:AI-Scheme .
+
+# Natural Language Processing
+ex:NLP a skos:Concept ;
+    skos:prefLabel "Natural Language Processing"@en ;
+    skos:altLabel "NLP"@en ;
+    skos:definition "A branch of AI that helps computers understand, interpret, and generate human language."@en ;
+    skos:broader ex:ArtificialIntelligence ;
+    skos:inScheme ex:AI-Scheme .
+
+# Computer Vision
+ex:ComputerVision a skos:Concept ;
+    skos:prefLabel "Computer Vision"@en ;
+    skos:definition "An area of AI that enables machines to interpret and understand visual information."@en ;
+    skos:broader ex:ArtificialIntelligence ;
+    skos:inScheme ex:AI-Scheme .
+
+# Reinforcement Learning
+ex:ReinforcementLearning a skos:Concept ;
+    skos:prefLabel "Reinforcement Learning"@en ;
+    skos:definition "A learning paradigm where agents learn by interacting with an environment and receiving feedback."@en ;
+    skos:broader ex:MachineLearning ;
+    skos:inScheme ex:AI-Scheme .
+
+# Neural Networks
+ex:NeuralNetworks a skos:Concept ;
+    skos:prefLabel "Neural Networks"@en ;
+    skos:definition "Models inspired by the human brain, consisting of interconnected nodes (neurons)."@en ;
+    skos:broader ex:MachineLearning ;
+    skos:related ex:DeepLearning ;
+    skos:inScheme ex:AI-Scheme .
+
+# Generative AI
+ex:GenerativeAI a skos:Concept ;
+    skos:prefLabel "Generative AI"@en ;
+    skos:definition "AI models capable of generating new content such as text, images, or music."@en ;
+    skos:broader ex:ArtificialIntelligence ;
+    skos:inScheme ex:AI-Scheme .
+
+# Explainable AI
+ex:ExplainableAI a skos:Concept ;
+    skos:prefLabel "Explainable AI"@en ;
+    skos:altLabel "XAI"@en ;
+    skos:definition "Techniques that make AI models more transparent and understandable to humans."@en ;
+    skos:broader ex:ArtificialIntelligence ;
+    skos:inScheme ex:AI-Scheme .
+
+# AI Ethics
+ex:AIEthics a skos:Concept ;
+    skos:prefLabel "AI Ethics"@en ;
+    skos:definition "The study and application of ethical principles to the development and use of AI systems."@en ;
+    skos:broader ex:ArtificialIntelligence ;
+    skos:inScheme ex:AI-Scheme .
