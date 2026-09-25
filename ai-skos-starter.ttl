@@ -79,3 +79,10 @@ ex:AIEthics a skos:Concept ;
     skos:definition "The study and application of ethical principles to the development and use of AI systems."@en ;
     skos:broader ex:ArtificialIntelligence ;
     skos:inScheme ex:AI-Scheme .
+
+# AI Applications
+ex:AIApplications a skos:Concept ;
+    skos:prefLabel "AI Applications"@en ;
+    skos:definition "Applications of artificial intelligence across different domains and use cases."@en ;
+    skos:broader ex:ArtificialIntelligence ;
+    skos:inScheme ex:AI-Scheme .
