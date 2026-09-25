@@ -99,4 +99,5 @@ ex:LibraryAutomation a skos:Concept ;
     skos:prefLabel "Library Automation"@en ;
     skos:definition "The use of information and communication technologies to automate and support library services and operations."@en ;
     skos:broader ex:AIinLibraries ;
+    skos:related ex:MachineLearning ;
     skos:inScheme ex:AI-Scheme .
