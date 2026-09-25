@@ -83,6 +83,7 @@ ex:AIEthics a skos:Concept ;
 # AI Applications
 ex:AIApplications a skos:Concept ;
     skos:prefLabel "AI Applications"@en ;
+    skos:altLabel "Artificial Intelligence Applications"@en ;
     skos:definition "Applications of artificial intelligence across different domains and use cases."@en ;
     skos:broader ex:ArtificialIntelligence ;
     skos:inScheme ex:AI-Scheme .
