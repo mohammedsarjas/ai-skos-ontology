@@ -86,3 +86,10 @@ ex:AIApplications a skos:Concept ;
     skos:definition "Applications of artificial intelligence across different domains and use cases."@en ;
     skos:broader ex:ArtificialIntelligence ;
     skos:inScheme ex:AI-Scheme .
+
+# AI in Libraries
+ex:AIinLibraries a skos:Concept ;
+    skos:prefLabel "AI in Libraries"@en ;
+    skos:definition "The application of artificial intelligence technologies to library services, resources, and operations."@en ;
+    skos:broader ex:AIApplications ;
+    skos:inScheme ex:AI-Scheme .
