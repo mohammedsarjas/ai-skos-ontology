@@ -93,6 +93,7 @@ ex:AIinLibraries a skos:Concept ;
     skos:definition "The application of artificial intelligence technologies to library services, resources, and operations."@en ;
     skos:broader ex:AIApplications ;
     skos:inScheme ex:AI-Scheme .
+    skos:altLabel "Library AI"@en ;
 
 # Library Automation
 ex:LibraryAutomation a skos:Concept ;
